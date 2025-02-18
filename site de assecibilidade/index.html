@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Evergo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 tabindex="0">Evergo - Encontre seu par perfeito!</h1>
+        <nav>
+            <ul>
+                <li><a href="#home" tabindex="0">Início</a></li>
+                <li><a href="#produtos" tabindex="0">Produtos</a></li>
+                <li><a href="#contato" tabindex="0">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="banner">
+        <h2 tabindex="0">Bem-vindo à nossa loja online de tênis! </h2>
+        <p tabindex="0">Encontre modelos incríveis e escolha o seu novo tênis com facilidade.</p>
+    </section>
+
+    <section id="produtos">
+        <h2 tabindex="0">Nossos Produtos</h2>
+        <div class="produtos-lista">
+            <div class="produto" tabindex="0">
+                <img src="tenis1.webp" alt="Tênis esportivo modelo X, ideal para corrida, com design moderno e confortável" />
+                <h3>Tenis Nike</h3>
+                <p>R$ 299,99</p>
+                <button onclick="adicionarAoCarrinho('Modelo X')" aria-label="Adicionar Modelo X ao carrinho">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto" tabindex="0">
+                <img src="tenis2.webp" alt="Tênis casual modelo Y, elegante e confortável para o dia a dia" />
+                <h3>Tenis Adidas</h3>
+                <p>R$ 199,99</p>
+                <button onclick="adicionarAoCarrinho('Modelo Y')" aria-label="Adicionar Modelo Y ao carrinho">Adicionar ao carrinho</button>
+            </div>
+            <div class="produto" tabindex="0">
+                <img src="mcqueen.avif" alt="Tênis esportivo modelo X, ideal para corrida, com design moderno e confortável" />
+                <h3>Crocs MCqueen</h3>
+                <p>R$ 499,99</p>
+                <button onclick="adicionarAoCarrinho('Modelo X')" aria-label="Adicionar Modelo X ao carrinho">Adicionar ao carrinho</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato">
+        <h2 tabindex="0">Entre em Contato</h2>
+        <form>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+
+            <button type="submit" aria-label="Enviar mensagem">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p tabindex="0">&copy; 2024 Loja de Tênis. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
